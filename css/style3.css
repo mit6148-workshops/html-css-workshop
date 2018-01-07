@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600');
+
+/* styling for a body tag, applies to everything inside the body of the page */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+/* this will affect ALL h1 elements */
+h1 {
+	color: blue;
+}
+
+/* an id selector */
+#name {
+	color: red;
+}
+#name-container {
+	color: green;
+}
+
+/* a class selector */
+.large-profile-container {
+	padding: 0 40%;
+}
+
+/* ADDED IN STEP 3: any element with this class will have its text centered */
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.card {
+	max-width: 100%;
+	border-style: solid;
+	border-width: 1px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.story-content {
+	font-size: 40px;
+}

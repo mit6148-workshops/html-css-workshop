@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600');
+
+/* styling for a body tag, applies to everything inside the body of the page */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+/* this will affect ALL h1 elements */
+h1 {
+	color: blue;
+}
+
+/* an id selector */
+#name {
+	color: red;
+}
+#name-container {
+	color: green;
+}
+
+#profile-image {
+	background-image:url(https://i.pinimg.com/736x/98/e0/7d/98e07decc7c1ca58236995de3567e46a--cat-shirts-kitties-cutest.jpg);
+}
+
+/* a class selector */
+.large-profile-container {
+	padding: 0 40%;
+}
+
+/* any element with this class will have its text centered */
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.card {
+	max-width: 100%;
+	border-style: solid;
+	border-width: 1px;
+	padding: 10px;
+	border-radius: 5px;
+	/* ADDED IN STEP 5 */
+	transition: 300ms;
+}
+
+.story-content {
+	font-size: 40px;
+}
+
+
+div.circle-avatar{
+	/* make it responsive */
+	max-width: 100%;
+	width:100%;
+	height:auto;
+	display:block;
+	/* div height to be the same as width*/
+	padding-top:100%;
+
+	/* make it a circle */
+	border-radius:50%;
+
+	/* Centering on image`s center*/
+	background-position-y: center;
+	background-position-x: center;
+	background-repeat: no-repeat;
+
+	/* it makes the clue thing, takes smaller dimension to fill div */
+	background-size: cover;
+
+	/* it is optional, for making this div centered in parent*/
+	margin: 0 auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	/********** ADDED IN STEP 5: animations! *********/
+	animation-name: rotate;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+/* hover selector */
+.card:hover {
+	background-color: #eaeaea;
+}
+
+@keyframes rotate {
+	100% {transform:rotate(360deg);}
+}
