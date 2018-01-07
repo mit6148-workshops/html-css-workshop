@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600');
+
+/* styling for a body tag, applies to everything inside the body of the page */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
